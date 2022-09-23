@@ -1,0 +1,52 @@
+import linkedin from "~/assets/linkedin.svg";
+import instagram from "~/assets/instagram.svg";
+import gmail from "~/assets/gmail.svg";
+import github from "~/assets/github.svg";
+import arvind from "~/assets/arvind-logo.jpeg";
+export const Navbar = () => {
+  return (
+    <div className="w-full h-full   border font-sans text-lg font-bold text-primary">
+      <div className="w-4/5 flex mx-auto justify-between">
+        {/* <img className="w-16 h-16 rounded-xl" src={arvind} alt="Arvind" /> */}
+        <div className="tracking-wider flex py-4">ARVIND KUMAR THOPPE</div>
+        <div className="w-1/4 tracking-wider flex py-4 justify-evenly">
+          {social.map((each, index) => {
+            let asset = each;
+            return (
+              <img
+                onClick={() => {
+                  window.open(each.link, "_blank");
+                }}
+                width="35px"
+                height="35px"
+                className="cursor-pointer"
+                src={each.name}
+                key={index}
+                alt={each.name}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const social = [
+  {
+    name: linkedin,
+    link: "https://linkedin.com/in/arvindkumarts",
+  },
+  {
+    name: instagram,
+    link: "https://instagram.com/arvind_thoppe",
+  },
+  {
+    name: gmail,
+    link: "mailto:tsarvind996@gmail.com",
+  },
+  {
+    name: github,
+    link: "https://github.com/ARVINDTRONICS",
+  },
+];

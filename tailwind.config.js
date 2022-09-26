@@ -9,7 +9,8 @@ module.exports = {
     },
 
     screens: {
-      sm: "360px",
+      sm: { min: "360px", max: "767px" },
+      lg: { min: "767px" },
     },
   },
   plugins: [],

@@ -5,11 +5,13 @@ import github from "~/assets/github.svg";
 import arvind from "~/assets/arvind-logo.jpeg";
 export const Navbar = () => {
   return (
-    <div className="w-full h-full   border font-sans text-lg font-bold text-primary">
-      <div className="w-4/5 flex mx-auto justify-between">
+    <div className="w-full h-full border font-sans sm:text-sm  lg:text-lg font-bold text-primary">
+      <div className="w-4/5  sm:justify-center lg:flex mx-auto lg:justify-between">
         {/* <img className="w-16 h-16 rounded-xl" src={arvind} alt="Arvind" /> */}
-        <div className="tracking-wider flex py-4">ARVIND KUMAR THOPPE</div>
-        <div className="w-1/4 tracking-wider flex py-4 justify-evenly">
+        <div className="tracking-wider flex py-4 sm:justify-center">
+          ARVIND KUMAR THOPPE
+        </div>
+        <div className="lg:w-1/4 tracking-wider flex py-4 justify-evenly  sm:w-full">
           {social.map((each, index) => {
             let asset = each;
             return (

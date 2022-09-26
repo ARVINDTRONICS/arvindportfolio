@@ -7,15 +7,15 @@ export default function Index() {
   return (
     <div>
       <Navbar />
-      <div className="w-4/5 mt-16 flex mx-auto ">
-        <div className="flex-col w-1/2">
+      <div className="w-4/5  lg:mt-16 sm:mt-8 lg:flex sm:flex-col mx-auto ">
+        <div className="flex-col lg:w-1/2 sm:w-full">
           <About />
-          <div className="w-full flex justify-between mt-12">
+          <div className="w-full lg:flex lg:justify-between sm:flex-col sm:justify-center mt-12">
             <Experience />
             <Skills />
           </div>
         </div>
-        <div className="w-1/2  my-auto ">
+        <div className="w-1/2  my-auto sm:mx-auto">
           <img className="w-full h-3/4 " src={DevImage} alt="programmer" />
         </div>
       </div>

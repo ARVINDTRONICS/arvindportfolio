@@ -7,6 +7,10 @@ module.exports = {
         primary: "#996E54",
       },
     },
+
+    screens: {
+      sm: "360px",
+    },
   },
   plugins: [],
 };

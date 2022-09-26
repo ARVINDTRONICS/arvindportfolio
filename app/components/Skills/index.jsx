@@ -1,7 +1,7 @@
 export const Skills = () => {
   return (
-    <div className="w-1/2  font-sans  text-gray-800 h-full">
-      <div className="text-xl font-medium">SKILLS</div>
+    <div className="lg:w-1/2 sm:w-full  font-sans  text-gray-800 h-full">
+      <div className="text-xl sm:text-center font-medium">SKILLS</div>
       <div className="flex mt-4 flex-wrap">
         {skills.map((each, index) => {
           return <SkillCapsule skill={each} key={index} />;
@@ -26,12 +26,17 @@ const skills = [
   "ReactJS",
   "Redux",
   "NodeJS",
+  "NextJS",
+  "Remix",
   "Azure",
+  "React-Native",
   "Web Development",
   "GraphQL",
-  "Bootstrap",
+  "Mocha",
+  "MongoDB",
+  "TailwindCSS",
   "SASS",
-  "REST/SOAP",
   "Git",
+  "REST/SOAP",
   "Springboot",
 ];

@@ -6,8 +6,8 @@ import tcs from "~/assets/tcs-logo.webp";
 
 export const Experience = () => {
   return (
-    <div className="w-1/2 font-sans  text-gray-800 h-full">
-      <div className="text-xl font-medium">EXPERIENCE</div>
+    <div className="lg:w-1/2 sm:w-full font-sans  text-gray-800 h-full">
+      <div className="text-xl sm:text-center font-medium">EXPERIENCE</div>
 
       <div>
         {Experiences.map((each, index) => {
@@ -20,7 +20,7 @@ export const Experience = () => {
 
 export const ExperienceItem = ({ experienceData }) => {
   return (
-    <div className="my-2 flex ">
+    <div className="my-8  flex ">
       <div>
         <img
           className="w-16 h-16"

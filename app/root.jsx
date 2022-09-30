@@ -20,6 +20,10 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="eb4SQpR7QO4ofZin7D_uSKiOnZjDiA897oRmuEuJmTw"
+        />
         <Meta />
         <Links />
       </head>

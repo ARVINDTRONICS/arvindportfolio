@@ -1,59 +1,30 @@
-import datafirst from "~/assets/datafirst-logo.webp";
-
-import crayon from "~/assets/crayon-logo.webp";
-
-import tcs from "~/assets/tcs-logo.webp";
-
-export const Experience = () => {
+export const Experience = ({ title, items }) => {
   return (
     <div className="lg:w-1/2 sm:w-full font-sans  text-gray-800 h-full">
-      <div className="text-xl sm:text-center font-medium">EXPERIENCE</div>
+      <div className="text-2xl sm:text-center font-medium uppercase">
+        {title}
+      </div>
 
-      <div>
-        {Experiences.map((each, index) => {
-          return <ExperienceItem key={index} experienceData={each} />;
+      <div className="sm:w-full sm:mx-auto sm:flex-col">
+        {items.map((each, index) => {
+          return <ExperienceItem key={index} item={each} />
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export const ExperienceItem = ({ experienceData }) => {
+export const ExperienceItem = ({ item }) => {
   return (
-    <div className="my-8  flex ">
+    <div className=" sm:w-11/12 sm:mx-auto my-8 flex sm:text-sm ">
       <div>
-        <img
-          className="w-16 h-16"
-          src={experienceData.image}
-          alt={experienceData.title}
-        />
+        <img className="w-16 h-16" src={item.image} alt={item.title} />
       </div>
       <div className="ml-4">
-        <div className="font-medium">{experienceData.title}</div>
-        <p className="text-gray-600">{experienceData.companyName}</p>
-        <p className="text-gray-400">{experienceData.tenure}</p>
+        <div className="font-medium">{item.title}</div>
+        <p className="text-gray-600">{item.description}</p>
+        <p className="text-gray-400">{item.tenure}</p>
       </div>
     </div>
-  );
-};
-
-const Experiences = [
-  {
-    title: "Full Stack Developer",
-    companyName: "Datafirst Solutions,Dubai",
-    tenure: "Nov 2021 - Present",
-    image: datafirst,
-  },
-  {
-    title: "UI Engineer",
-    companyName: "Crayon Data,Chennai",
-    tenure: "Mar 2020 - Nov 2021",
-    image: crayon,
-  },
-  {
-    title: "Systems Engineer",
-    companyName: "TCS,Chennai",
-    tenure: "Nov 2017 - Mar 2020",
-    image: tcs,
-  },
-];
+  )
+}

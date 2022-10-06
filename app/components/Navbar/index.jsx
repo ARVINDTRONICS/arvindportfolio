@@ -3,6 +3,7 @@ import instagram from "~/assets/instagram.svg";
 import gmail from "~/assets/gmail.svg";
 import github from "~/assets/github.svg";
 import arvind from "~/assets/arvind-logo.jpeg";
+
 export const Navbar = () => {
   return (
     <div className="w-full h-full border font-sans sm:text-sm  lg:text-lg font-bold text-primary">

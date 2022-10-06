@@ -1,15 +1,15 @@
-import datafirst from "~/assets/datafirst-logo.webp"
-import crayon from "~/assets/crayon-logo.webp"
-import tcs from "~/assets/tcs-logo.webp"
-import sastra from "~/assets/sastra.webp"
-import crayonlogo from "~/assets/crayon.webp"
-import JP from "~/assets/JP1.webp"
-import Waseem from "~/assets/Waseem.webp"
-import QuickStarter from "~/assets/quickStarter.jpeg"
-import AB from "~/assets/ab.jpeg"
-import award from "~/assets/award.svg"
-import certificate from "~/assets/cert.svg"
-import Bofa from "~/assets/BOFA.png"
+import datafirst from "~/assets/datafirst-logo.webp";
+import crayon from "~/assets/crayon-logo.webp";
+import tcs from "~/assets/tcs-logo.webp";
+import sastra from "~/assets/sastra.webp";
+import crayonlogo from "~/assets/crayon.webp";
+import JP from "~/assets/JP1.webp";
+import Waseem from "~/assets/Waseem.webp";
+import QuickStarter from "~/assets/quickstarter.jpeg";
+import AB from "~/assets/ab.jpeg";
+import award from "~/assets/award.svg";
+import certificate from "~/assets/cert.svg";
+import Bofa from "~/assets/BOFA.png";
 
 export const Experiences = [
   {
@@ -30,7 +30,7 @@ export const Experiences = [
     tenure: "Nov 2017 - Mar 2020",
     image: tcs,
   },
-]
+];
 
 export const Education = [
   {
@@ -39,7 +39,7 @@ export const Education = [
     tenure: "Jun 2013 - May 2017",
     image: sastra,
   },
-]
+];
 
 export const Testimonials = [
   {
@@ -91,4 +91,4 @@ export const Testimonials = [
       "Certificate of Appreciation for outstanding performance and lasting contribution to the Mobile Banking QA Team.",
     ownerImage: award,
   },
-]
+];

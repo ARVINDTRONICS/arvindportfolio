@@ -96,3 +96,10 @@ export const Testimonials = [
     ownerImage: cup,
   },
 ];
+
+export const Services = [
+  "Web App Development",
+  "Personal / Product Portfolios",
+  "E-Commerce Development",
+  "Web Development Classes",
+];

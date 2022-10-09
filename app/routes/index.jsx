@@ -5,8 +5,9 @@ import { Testimonial } from "~/components/Testimonial";
 
 import { Skills } from "~/components/Skills";
 import DevImage from "~/assets/dev2.webp";
-import { Experiences, Education, Testimonials } from "~/constants";
+import { Experiences, Education, Testimonials, Services } from "~/constants";
 import creators from "~/assets/creators.png";
+import correct from "~/assets/correct.svg";
 
 export default function Index() {
   return (
@@ -43,19 +44,30 @@ export default function Index() {
         </div>
       </div>
 
-      {/* <div className="w-full h-full bg-primary flex justify-center">
-        <div className="text-2xl  p-12 my-4  text-white font-medium  uppercase">
-          I can help you with !
+      <div className="w-full h-full bg-primary flex sm:flex-col justify-center">
+        <div className="sm:w-3/4 sm:mx-auto text-2xl sm:text-lg lg:p-12 sm:p-4 my-4  text-white font-medium  uppercase">
+          <button
+            onClick={() => {
+              window.open("https://linkedin.com/in/arvindkumarts", "_blank");
+            }}
+            className="btn border  p-3 text-white bg-primary btn-sm text-md mt-2 text-sm"
+          >
+            CONTACT ME !
+          </button>
         </div>
-        <div className="p-4 text-white text-xl">
-          <div className="my-2">Web App development</div>
-          <div className="my-2">Personal/Product Portfolio development</div>
-          <div className="my-2">E-Commerce App Development</div>
-          <div className="my-2">Web Development Classes</div>
+        <div className="sm:w-3/4 sm:mx-auto text-center lg:p-4 text-white lg:text-xl sm:text-md">
+          {Services.map((each, index) => {
+            return (
+              <div key={index} className="flex my-2">
+                <img className="mx-4" src={correct} alt="" />
+                {each}
+              </div>
+            );
+          })}
         </div>
-      </div> */}
+      </div>
 
-      <hr className="w-4/5 mx-auto border mt-4" />
+      <hr className="w-4/5 mx-auto border " />
       <div className="w-4/5 mx-auto py-2 text-center text-sm text-primary ">
         ALL RIGHTS RESERVED ©️ {new Date().getFullYear()}
       </div>

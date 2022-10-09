@@ -1,18 +1,18 @@
 export const Experience = ({ title, items }) => {
   return (
     <div className="lg:w-1/2 sm:w-full font-sans  text-gray-800 h-full">
-      <div className="text-2xl sm:text-center font-medium uppercase">
+      <div className="text-2xl sm:text-center font-medium uppercase text-primary">
         {title}
       </div>
 
       <div className="sm:w-full sm:mx-auto sm:flex-col">
         {items.map((each, index) => {
-          return <ExperienceItem key={index} item={each} />
+          return <ExperienceItem key={index} item={each} />;
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const ExperienceItem = ({ item }) => {
   return (
@@ -26,5 +26,5 @@ export const ExperienceItem = ({ item }) => {
         <p className="text-gray-400">{item.tenure}</p>
       </div>
     </div>
-  )
-}
+  );
+};

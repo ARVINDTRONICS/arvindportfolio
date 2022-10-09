@@ -1,7 +1,9 @@
 export const About = () => {
   return (
     <div className="w-full font-sans  text-gray-800 sm:text-center">
-      <h2 className="mt-2 mb-2 text-3xl font-medium">Full Stack Developer</h2>
+      <h2 className="mt-2 mb-2 text-3xl font-medium text-primary">
+        Full Stack Developer
+      </h2>
       <h6 className="mt-2 mb-2 text-xl ">Madurai,India</h6>
       <p className="mt-2 mb-2 text-gray-500">
         Hey there! Thanks for visiting me :)
@@ -12,5 +14,5 @@ export const About = () => {
         process bring along to my day :)
       </p>
     </div>
-  )
-}
+  );
+};

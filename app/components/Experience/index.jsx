@@ -18,7 +18,7 @@ export const ExperienceItem = ({ item }) => {
   return (
     <div className=" sm:w-11/12 sm:mx-auto my-8 flex sm:text-sm ">
       <div>
-        <img className="w-16 h-16" src={item.image} alt={item.title} />
+        <img className="w-18 h-16" src={item.image} alt={item.title} />
       </div>
       <div className="ml-4">
         <div className="font-medium">{item.title}</div>

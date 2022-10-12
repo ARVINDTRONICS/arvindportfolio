@@ -35,7 +35,7 @@ export const Testimonial = ({ title, items }) => {
   });
 
   return (
-    <div className="w-full font-sans mt-3 mb-3  text-gray-800 ">
+    <div className="w-full font-sans mt-4 mb-4  text-gray-800 ">
       <div className="text-2xl my-4 text-center text-primary font-medium uppercase">
         {title}
       </div>

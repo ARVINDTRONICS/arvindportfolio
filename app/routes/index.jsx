@@ -37,7 +37,7 @@ export default function Index() {
       <Testimonial title={"Testimonials"} items={Testimonials} />
       <div className="w-10/12  lg:my-12 sm:mt-8 flex-col mx-auto ">
         <div className="text-2xl  mt-6 text-center text-primary font-medium uppercase">
-          THANKS TO CREATORS ON !
+          THANKS TO DEV CONTENT CREATORS ON!
         </div>
         <div>
           <img className="lg:w-3/4 sm:w-full mx-auto " src={creators} alt="" />
@@ -51,9 +51,12 @@ export default function Index() {
         <div className="w-full lg:flex sm:flex-col lg:justify-around sm:mx-auto text-center my-12 text-white lg:text-xl sm:text-md">
           {Services.map((each, index) => {
             return (
-              <div key={index} className="flex my-2 justify-center">
+              <div
+                key={index}
+                className="w-11/12  flex my-2  lg:justify-center"
+              >
                 <img className="w-6 h-6 mx-4" src={correct} alt="" />
-                {each}
+                <p className="mx-2">{each}</p>
               </div>
             );
           })}

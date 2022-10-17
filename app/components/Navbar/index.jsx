@@ -6,7 +6,7 @@ import arvind from "~/assets/arvind-logo.jpeg";
 
 export const Navbar = () => {
   return (
-    <div className="w-full h-full border font-sans sm:text-sm  lg:text-lg font-bold text-primary">
+    <div className="w-full h-full lg:p-4 font-sans sm:text-sm  lg:text-lg font-bold text-primary">
       <div className="w-10/12  sm:justify-center lg:flex mx-auto lg:justify-between">
         {/* <img className="w-16 h-16 rounded-xl" src={arvind} alt="Arvind" /> */}
         <div className="tracking-wider flex py-4 sm:justify-center">

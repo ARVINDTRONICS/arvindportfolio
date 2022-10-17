@@ -39,13 +39,13 @@ export const Testimonial = ({ title, items }) => {
       <div className="text-2xl my-4 text-center text-primary font-medium uppercase">
         {title}
       </div>
-      <div className="w-8/12 sm:w-11/12 relative flex  rounded-xl lg:p-6 sm:p-4 mx-auto shadow-2xl">
+      <div className="w-8/12 sm:w-11/12 relative flex  rounded-xl lg:p-8 sm:p-4 mx-auto shadow-2xl">
         <div
           onClick={() => {
             console.log("clicked");
             handleBackward();
           }}
-          className="lg:w-10 w-5 absolute top-1/2 left-1 rotate-180"
+          className="lg:w-10 w-5 absolute top-1/2 left-2 rotate-180"
         >
           <img src={arrow} alt="" />
         </div>
@@ -66,7 +66,7 @@ export const Testimonial = ({ title, items }) => {
           onClick={() => {
             handleForward();
           }}
-          className="lg:w-10 w-5 absolute top-1/2 right-1"
+          className="lg:w-10 w-5 absolute top-1/2 right-2"
         >
           <img src={arrow} alt="" />
         </div>

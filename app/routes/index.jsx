@@ -4,10 +4,14 @@ import { Experience } from "~/components/Experience";
 import { Testimonial } from "~/components/Testimonial";
 
 import { Skills } from "~/components/Skills";
-import DevImage from "~/assets/dev2.webp";
-import { Experiences, Education, Testimonials, Services } from "~/constants";
-import creators from "~/assets/creators.png";
-import correct from "~/assets/correct.png";
+import {
+  Experiences,
+  Education,
+  Testimonials,
+  Services,
+  ProjectsData,
+} from "~/constants";
+import { CORRECT, CREATORS, DEVBG } from "~/assets/index";
 
 export default function Index() {
   return (
@@ -25,7 +29,7 @@ export default function Index() {
           <div className="lg:w-1/2 sm:w-full my-auto sm:mx-auto">
             <img
               className="w-full lg:h-3/4 sm:h-full"
-              src={DevImage}
+              src={DEVBG}
               alt="programmer"
             />
           </div>
@@ -36,6 +40,13 @@ export default function Index() {
           </div>
         </div>
         <Testimonial title={"Testimonials"} items={Testimonials} />
+
+        {/* <div className="w-10/12  lg:mt-4 sm:mt-4 lg:flex sm:flex-col mx-auto ">
+          <div className="w-full lg:flex lg:justify-between sm:flex-col sm:justify-center mt-4">
+            <Projects title={"My Works"} items={ProjectsData} />
+          </div>
+        </div> */}
+
         <div className="w-10/12  lg:my-12 sm:mt-8 flex-col mx-auto ">
           <div className="text-2xl  mt-6 text-center text-primary font-medium uppercase">
             THANKS TO DEV CONTENT CREATORS ON!
@@ -43,7 +54,7 @@ export default function Index() {
           <div>
             <img
               className="lg:w-3/4 sm:w-full mx-auto "
-              src={creators}
+              src={CREATORS}
               alt=""
             />
           </div>
@@ -60,8 +71,8 @@ export default function Index() {
                   key={index}
                   className="w-11/12  flex my-2  lg:justify-center"
                 >
-                  <img className="w-6 h-6 mx-4" src={correct} alt="" />
-                  <p className="mx-2">{each}</p>
+                  <img className="w-6 h-6 mx-4" src={CORRECT} alt="" />
+                  <p>{each}</p>
                 </div>
               );
             })}

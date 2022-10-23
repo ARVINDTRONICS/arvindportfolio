@@ -1,8 +1,4 @@
-import linkedin from "~/assets/linkedin.svg";
-import instagram from "~/assets/instagram.svg";
-import gmail from "~/assets/gmail.svg";
-import github from "~/assets/github.svg";
-import arvind from "~/assets/arvind-logo.jpeg";
+import { GITHUB, GMAIL, INSTAGRAM, LINKEDIN } from "~/assets/index";
 
 export const Navbar = () => {
   return (
@@ -37,19 +33,19 @@ export const Navbar = () => {
 
 const social = [
   {
-    name: linkedin,
+    name: LINKEDIN,
     link: "https://linkedin.com/in/arvindkumarts",
   },
   {
-    name: instagram,
+    name: INSTAGRAM,
     link: "https://instagram.com/arvind_thoppe",
   },
   {
-    name: gmail,
+    name: GMAIL,
     link: "mailto:tsarvind996@gmail.com",
   },
   {
-    name: github,
+    name: GITHUB,
     link: "https://github.com/ARVINDTRONICS",
   },
 ];

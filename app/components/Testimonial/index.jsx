@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import arrow from "~/assets/arrow.png";
+import { ARROW } from "~/assets/index.js";
 
 export const Testimonial = ({ title, items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,7 +47,7 @@ export const Testimonial = ({ title, items }) => {
           }}
           className="lg:w-10 w-5 absolute top-1/2 left-2 rotate-180"
         >
-          <img src={arrow} alt="" />
+          <img src={ARROW} alt="" />
         </div>
         <div className="w-full mx-4 flex items-center flex-nowrap overflow-hidden">
           {items.map((item, i) => {
@@ -68,7 +68,7 @@ export const Testimonial = ({ title, items }) => {
           }}
           className="lg:w-10 w-5 absolute top-1/2 right-2"
         >
-          <img src={arrow} alt="" />
+          <img src={ARROW} alt="" />
         </div>
       </div>
     </div>
